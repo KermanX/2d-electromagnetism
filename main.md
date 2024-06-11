@@ -303,7 +303,45 @@ $$
 
 6. 电磁感应
 
+在此做与三维类似的推导：
 
+首先是对电场旋度方程微分形式的改造
+
+一方面：
+$$
+\mathscr {E}=\lambda_1 \frac{d \Phi}{dt}=\lambda_1 \frac{d}{dt} \iint B\  dS=\lambda_1 \iint \frac{\partial B}{\partial t}\ dS
+$$
+(注：这里显然有$\lambda_1<0$)
+
+另一方面：
+$$
+\mathscr {E}=\oint \vec E \cdot d \vec l=\iint (\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y})\ dS
+$$
+于是得到：
+$$
+\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y}=\lambda_1 \frac{\partial B}{\partial t}
+$$
+
+接着改造磁场的梯度方程：
+
+变化的电磁场中，电流的连续性方程不再成立：
+$$
+\oint \vec i \, \cdot d \vec {\bm n} \neq 0
+$$
+而是有：
+$$
+\oint \vec i \, \cdot d \vec {\bm n}=-\frac{d}{dt} \iint \rho \ dS=-\frac{d}{dt} \oint \vec E \cdot d \vec {\bm n}=-\oint \frac{\partial \vec E}{\partial t} \cdot d \vec {\bm n}\\
+\implies \oint (\vec i+\frac{\partial \vec E}{\partial t})\cdot d \vec {\bm n}=0
+$$
+所以磁场的跨路定理应当被改写为：
+$$
+B(\bm r_2)-B(\bm r_1)=c_2 \int_{\bm r_1}^{\bm r_2} (\vec i+\frac{\partial \vec E}{\partial t})\cdot d \vec{\bm n}
+$$
+之后得到微分形式：
+
+$$
+\nabla B=M(c_2\,\vec i+\lambda_2 \frac{\partial \vec E}{\partial t})
+$$
 
 7. 电磁震荡
 
