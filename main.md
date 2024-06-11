@@ -188,9 +188,11 @@ $$
 
 图1 二维异号点电荷电场模拟
 
+注意：这里的等势面严格是圆形，这与三维中无穷长均匀带电直导线的等势面类似。
+
 ![](./src/assets/e-3.png)
 
-图2 二维有限长带电线电场模拟
+图2 二维有限长均匀带电线电场模拟
 
 ![](./src/assets/e-4.png)
 
@@ -311,13 +313,13 @@ $$
 
 一方面：
 $$
-\mathscr {E}=\lambda_1 \frac{d \Phi}{dt}=\lambda_1 \frac{d}{dt} \iint B\  dS=\lambda_1 \iint \frac{\partial B}{\partial t}\ dS
+\mathscr {E}=\lambda_1 \frac{d \Phi}{dt}=\lambda_1 \frac{d}{dt} \iint_D B\  dS=\lambda_1 \iint_D \frac{\partial B}{\partial t}\ dS
 $$
 (注：这里显然有$\lambda_1<0$)
 
 另一方面：
 $$
-\mathscr {E}=\oint \vec E \cdot d \vec l=\iint (\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y})\ dS
+\mathscr {E}=\oint_{\partial D} \vec E \cdot d \vec l=\iint_D (\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y})\ dS
 $$
 于是得到：
 $$
@@ -328,16 +330,16 @@ $$
 
 变化的电磁场中，电流的连续性方程不再成立：
 $$
-\oint \vec i \, \cdot d \vec {\bm n} \neq 0
+\oint_{\partial D} \vec i \, \cdot d \vec {\bm n} \neq 0
 $$
 而是有：
 $$
-\oint \vec i \, \cdot d \vec {\bm n}=-\frac{d}{dt} \iint \rho \ dS=-\frac{d}{dt} \oint \vec E \cdot d \vec {\bm n}=-\oint \frac{\partial \vec E}{\partial t} \cdot d \vec {\bm n}\\
-\implies \oint (\vec i+\frac{\partial \vec E}{\partial t})\cdot d \vec {\bm n}=0
+c_2 \oint_{\partial D} \vec i \, \cdot d \vec {\bm n}=-c_2 \frac{d}{dt} \iint_D \rho \ dS=-\lambda_2 \frac{d}{dt} \oint_{\partial D} \vec E \cdot d \vec {\bm n}=-\lambda_2 \oint_{\partial D} \frac{\partial \vec E}{\partial t} \cdot d \vec {\bm n}\\
+\implies \oint_{\partial D} (c_2\vec i+\lambda_2 \frac{\partial \vec E}{\partial t})\cdot d \vec {\bm n}=0
 $$
 所以磁场的跨路定理应当被改写为：
 $$
-B(\bm r_2)-B(\bm r_1)=c_2 \int_{\bm r_1}^{\bm r_2} (\vec i+\frac{\partial \vec E}{\partial t})\cdot d \vec{\bm n}
+B(\bm r_2)-B(\bm r_1)=\int_{\bm r_1}^{\bm r_2} (c_2\vec i+\lambda_2 \frac{\partial \vec E}{\partial t})\cdot d \vec{\bm n}
 $$
 之后得到微分形式：
 
@@ -345,9 +347,7 @@ $$
 \nabla B=M(c_2\,\vec i+\lambda_2 \frac{\partial \vec E}{\partial t})
 $$
 
-7. 电磁震荡
-
-考虑到电磁感应现象，我们将方程改写成如下形式：
+至此为止，我们考虑到电磁感应现象，已经将方程改写成如下形式：
 $$
     \begin{align}
         &\nabla \cdot \vec E=c_1 \cdot \rho
@@ -357,6 +357,11 @@ $$
     \end{align}\\
 $$
 注意：这里将M写在括号外面，对电场也进行一个旋转是必要的，否则无法得到正常的电磁振荡形式。
+
+这便是二位世界的Maxwell方程组，它只有三个方程！！
+
+7. 电磁震荡
+
 
 
 在真空中：$\rho\,$与$\,\vec i\,$取成0得到方程组：
