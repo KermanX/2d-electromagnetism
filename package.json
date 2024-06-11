@@ -5,7 +5,8 @@
   "packageManager": "pnpm@9.1.1",
   "scripts": {
     "dev": "vite",
-    "build": "node ./graphs/export.js && vite build",
+    "export": "node ./graphs/export.js",
+    "build": "pnpm export && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
