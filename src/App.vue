@@ -9,6 +9,7 @@
       郑博毅，熊桐睿
     </div>
 
+    <!--
     <div mb-3>
       <strong>摘要：</strong>
       地下流体注入可以用于油气开发、废液处理和地下水整治等，是一项广泛使用的技术。但它具有诱发地震的风险，而减少地震产生的最佳注入策略尚不清楚。本文通过分析地下流体注入诱发地震的成因，讨论孔隙压力和破裂压力的关系：当孔隙压力大于破裂压力时，地震难以避免；当孔隙压力小于破裂压力时，地层沿着预先存在的亚临界裂缝滑动，可以通过优化注入策略减少地震的产生。在第二种情况下，本文根据 Alghannam 和 Juanes 建立的多孔弹性弹簧-滑块模型，得出诱发地震的可能性主要取决于孔隙压力的增加速率。并由 Ruina 的稳定性条件进行模拟，给出了分段递增注入速率的注入策略。
@@ -408,6 +409,7 @@
       <div article-ref>Yeck, W. L. et al. Oklahoma experiences largest earthquake during ongoing regional wastewater
         injection hazard mitigation efforts. Geophys. Res. Lett. 44, 711–717 (2017).</div>
     </div>
+    -->
   </div>
 </template>
 

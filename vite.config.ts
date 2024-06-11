@@ -8,6 +8,7 @@ import VuePluginKatex from './plugins/vue-plugin-katex'
 import MarkdownItKatex from './plugins/markdown-it-katex'
 
 export default defineConfig({
+  base: '/2d-electromagnetism/',
   plugins: [
     Inspect(),
     VuePluginKatex(),
