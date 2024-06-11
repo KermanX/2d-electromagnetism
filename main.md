@@ -185,18 +185,23 @@ $$
 ### 二维静电场的模拟
 
 ![](./src/assets/e-1.png)
+
 图1 二维异号点电荷电场模拟
 
 ![](./src/assets/e-3.png)
+
 图2 二维有限长带电线电场模拟
 
 ![](./src/assets/e-4.png)
+
 图3 二维带电导体圆环电场模拟
 
 ![](./src/assets/e-5.png)
+
 图4 二维电容器电场模拟
 
 ![](./src/assets/e-2.png)
+
 图5 二维无限长带电线与点电荷电场模拟
 
 ### 二维电流
@@ -204,13 +209,13 @@ $$
 二维空间中的载流子，如二维电子，在空间中运动时即产生电流。二维空间中的电流密度应当与三维空间中的电流密度具有相同的定义。即，单位面积上的电流量与单位时间的比值。二维空间中的电流密度应当满足：
 
 $$
-\vec j = j_x \bm{\hat x} + j_y \bm{\hat y}
+\vec i = i_x \bm{\hat x} + i_y \bm{\hat y}
 $$
 
 而不存在 $j_z$ 分量。二维空间中电荷守恒定律应当成立，故电流密度应当满足电流连续性方程：
 
 $$
-\nabla \cdot \vec j = -\frac{\partial \rho}{\partial t}
+\nabla \cdot \vec i = -\frac{\partial \rho}{\partial t}
 $$
 
 ### 二维静磁场
