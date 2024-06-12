@@ -1,11 +1,17 @@
 import Vue from '@vitejs/plugin-vue'
-import UnoCSS from 'unocss/vite'
-import { defineConfig } from 'vite'
-import Markdown from 'unplugin-vue-markdown/vite'
 import MarkdownItMdc from 'markdown-it-mdc'
+import {
+  presetAttributify,
+  presetIcons,
+  presetUno,
+  transformerDirectives
+} from 'unocss'
+import UnoCSS from 'unocss/vite'
+import Markdown from 'unplugin-vue-markdown/vite'
+import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
-import VuePluginKatex from './plugins/vue-plugin-katex'
 import MarkdownItKatex from './plugins/markdown-it-katex'
+import VuePluginKatex from './plugins/vue-plugin-katex'
 
 export default defineConfig({
   base: '/2d-electromagnetism/',
@@ -14,15 +20,30 @@ export default defineConfig({
     VuePluginKatex(),
     Markdown({
       markdownItSetup(md) {
-        md.use(MarkdownItKatex)
+        md.use(MarkdownItKatex, {
+          strict: 'ignore',
+          trust: true,
+        })
         md.use(MarkdownItMdc)
       }
     }),
     Vue({
-      include: [/\.vue$/, /\.vue\?vue/, /\.vue\?v=/, /\.md$/, /\.md\?vue/],
+      include: [/\.vue$/, /\.md$/],
     }),
     UnoCSS({
-
+      presets: [
+        presetUno(),
+        presetAttributify(),
+        presetIcons({
+          extraProperties: {
+            'display': 'inline-block',
+            'vertical-align': 'middle',
+          },
+        }),
+      ],
+      transformers: [
+        transformerDirectives(),
+      ],
     }),
   ],
 })

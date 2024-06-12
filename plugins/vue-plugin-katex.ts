@@ -12,7 +12,7 @@ export default function (): Plugin[] {
       name: 'vue-plugin-katex',
       enforce: 'pre',
       transform(code, id, options) {
-        if (id.includes('.vue') && !id.includes('node_modules')) {
+        if (id.includes('.vue') && !id.includes('.vue?vue') && !id.includes('node_modules')) {
           const s = new MagicString(code);
           s.replaceAll(/<math>([\s\S]+?)<\/math>/mg, (_, match) => {
             if (katexCache1[match]) {

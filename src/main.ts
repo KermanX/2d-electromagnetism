@@ -1,9 +1,11 @@
 /// <reference types="vite/client" />
 
 import { createApp } from 'vue'
-import App from './App.vue'
+// @ts-ignore
+import Main from '../README.md'
 import 'katex/dist/katex.min.css'
 import 'uno.css'
 import './styles.css'
+import Figure from './Figure.vue'
 
-createApp(App).mount('#app')
+createApp(Main).component('Figure', Figure).mount('#app')
