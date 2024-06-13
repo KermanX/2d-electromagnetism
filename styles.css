@@ -11,6 +11,10 @@
   margin-bottom: 80px;
 }
 
+:root {
+  overflow-x: hidden;
+}
+
 * {
   border-style: solid;
   border-width: 0px;
@@ -23,7 +27,7 @@ body {
   line-height: 1.8rem;
   font-style: normal;
   background-color: #333333;
-  letter-spacing: 1.6px;
+  letter-spacing: 1.4px;
 }
 
 #app {
@@ -128,3 +132,7 @@ table th, table td {
   padding: 4px 0;
 }
 
+sup {
+  margin-top: -1em;
+  line-height: 0;
+}

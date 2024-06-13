@@ -28,7 +28,7 @@ export default function (): Plugin[] {
             cacheSize++;
             return katexCache2[match] = katex.renderToString(match.trim(), { displayMode: false });
           })
-          if (cacheSize > 300) {
+          if (cacheSize > 30) {
             cacheSize = 0;
             katexCache1 = {};
             katexCache2 = {};
