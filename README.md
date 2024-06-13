@@ -4,13 +4,18 @@
 
 <div mb-3>
 
-**摘要:** TODO
+**摘要:** 三维电磁场的性质已经被研究得比较清楚，而目前对于二维空间的电磁场研究不多。对二维空间的电磁场研究具有重要意义，可以应对“二向箔”攻击，帮助主动移民二维空间和创造二维虚拟世界。本文研究了与人类当前所处的三维空间具有相同基本性质的二维空间的电磁场。以不受维度影响的最基本的电磁理论作为基本假设，即从叠加原理、高斯定理、环路定理出发，推导出库仑定律的一次方反比形式和 [Poisson's Equation]{.font-serif}。在磁学方面，本文论证了二维磁场强度是标量，二维磁场是标量场。类比与三维的安培环路定理，本文推导了二维磁场的跨路定理，再通过数学推导得到跨路定理的微分形式，从而得到二维电磁场的麦克斯韦方程组和电磁震荡的波动方程。最终本文得出了自洽的二维电磁学公式，它们具有良好的数学结构且可以和人类当前所所处的三维空间的电磁学公式相对应，这也佐证本文基本假设的合理性。
+
+**关键词:** 二维电磁场，高斯定理，跨路定理，二维电磁震荡
 
 </div>
 
-<div>
 
-**关键词:** 二维空间，电磁场，基本理论
+<div mb-3 leading-6 letter-spacing-normal style="word-break: break-all;">
+
+**Abstract:**{.font-sans} <span font-serif>The properties of three-dimensional electromagnetic fields have been well-studied, while current research on two-dimensional electromagnetic fields is scant. The study of two-dimensional electromagnetic fields is significant, which can deal with "two-way foil" attacks, facilitate active immigration into two-dimensional spaces, and aid in creating two-dimensional virtual worlds. This paper investigates the electromagnetic fields of two-dimensional spaces which share fundamental properties with the three-dimensional space that humans currently inhabit. Employing electromagnetic theory that is unaffected by dimensions as the basic assumption, i.e., starting from the superposition principle, Gauss's law, and loop theorem, we derive the inverse square form of Coulomb's law and Poisson's Equation. In magnetism, this paper proves that two-dimensional magnetic field strength is scalar, and the two-dimensional magnetic field is a scalar field. Analogous to Ampere's loop theorem in three dimensions, we formulated the cross-route theorem for a two-dimensional magnetic field, then via mathematical derivation, we obtained the differential form of the cross-route theorem, leading to the Maxwell's equations for the two-dimensional electromagnetic field and the fluctuation equation for electromagnetic oscillations. In conclusion, this paper presents self-consistent omulations of two-dimensional electromagnetism. They possess sound mathematical structures and can correspond to the formula of three-dimensional electromagnetism presently understood by humans, which reaffirms the legitimacy of the basic assumptions made in this paper.</span>
+
+**Keywords:**{.font-sans} <span font-serif>Two-dimensional electromagnetic field，Gauss theorem，Pass-crossing theorem，Two-dimensional electromagnetic oscillation</span>
 
 </div>
 
@@ -26,7 +31,7 @@
 
 三、人类有创造二维虚拟世界的可能。随着计算机技术的发展，人类有可能创造出二维虚拟世界，用于娱乐、教育、科研等领域。在二维虚拟世界中，电磁现象是虚拟的，但也需要有一套完整的电磁理论来描述。研究二维空间的电磁理论，有助于人类更好地理解二维虚拟世界中的电磁现象，设计更加逼真的虚拟环境，提高虚拟现实技术的水平。
 
-因此，研究二维空间的电磁理论具有重要意义。由于无法直接进入二维空间进行实验，本研究主要采用纯理论推导的方式，构建了在基本性质上与当前人类所处的三维空间基本相同，且自洽的二维电磁场理论。包括了二维电磁场的叠加原理、二维静电场的高斯定理、二维静电场的环路定理、二维静电场的Poisson's Equation、二维电磁感应、二维电磁震荡等基本方程。并通过数值模拟，展示了二维电磁场的一些典型图像。
+因此，研究二维空间的电磁理论具有重要意义。由于无法直接进入二维空间进行实验，本研究主要采用纯理论推导的方式，构建了在基本性质上与人类当前所处的三维空间有相同基本性质，且自洽的二维电磁场理论。包括了二维电磁场的叠加原理、二维静电场的高斯定理、二维静电场的环路定理、二维静电场的Poisson's Equation、二维电磁感应、二维电磁震荡等基本方程。并通过数值模拟，展示了二维电磁场的一些典型图像。
 
 ## 方法
 
@@ -157,6 +162,10 @@ $$
 
 这里$d \bm{\vec n}$是大小为$dl$,方向延外法线方向的矢量（如图）。
 
+<Figure caption="图n ??????">
+<img src="./assets/4.png">
+</Figure>
+
 类比立体角，实际上我们也有平面角：
 
 $$
@@ -248,17 +257,23 @@ $$
 
 作为电磁场的基本性质，本文认为磁场强度满足叠加原理，即多个磁场源分别在各点产生的磁场强度可以直接相加，得到它们的合成磁场强度。这体现了磁场的线性性质。
 
-### 二维空间的电生磁
+### 二维电流的磁效应
 
-在三维空间中，电流产生磁场的现象可由Biot-Savart定律和安培环路定理描述。其中，安培环路定理由Biot-Savart定律推导而来，而Biot-Savart定律由实验得出。由于不可能直接进入二维空间进行实验，一个合理的方式是将本文所研究的二维空间转化为受特殊约束的三维空间，并在三维空间中进行推导，再将结论转化为二维空间中的结论。
+在三维空间中，电流产生磁场的现象可由 Biot-Savart 定律和安培环路定理描述。其中，安培环路定理由Biot-Savart定律推导而来，而 Biot-Savart 定律由实验得出。由于不可能直接进入二维空间进行实验，一个合理的方式是将本文所研究的二维空间转化为受特殊约束的三维空间，并在三维空间中进行推导，再将结论转化为二维空间中的结论。
 
 将任意的二维空间的电流分布在第三个维度上无限地复制，可以得到一个具有延 $z$ 轴平移对称性的三维空间。比如，二维空间的逆时针电流环在 $z$ 轴方向上无限延伸，将形成一个在三维空间中无限长且无线密的螺线管。根据三维空间的电磁场理论，可得在螺线管内外磁场的方向相反，大小相等，且处处均匀，没有 $z$ 轴分量。这样的磁场分布同样具有延 $z$ 轴的平移对称性，故可以简单地截取三维空间中的一个 $xOy$ 平面，可以认为该平面上的磁场分布即反映了我们研究的二维空间中该电流环产生的磁场。
 
-（如图）
+<Figure caption="图n 二维空间的电流分布在第三个维度上无限地复制的示意">
+<img src="./assets/2.svg" />
+</Figure>
 
 此处规定在三维空间中向上穿过平面的磁场在二维空间中描述为正值，反之，向下穿过平面的磁场在二维空间中描述为负值。故通过上面的例子，我们可以得到，二维空间中的逆时针电流环在环内产生大小处处相等的正磁场，环外产生大小处处相等的负磁场。
 
 类似地，我们可以将二维空间中的无限长电流转化为三维空间中的无穷大载流平面，再截取一个平面，得到二维空间中的磁场分布。由此可得，无限长电流在它电流方向左侧区域产生无限大的匀强正磁场，右侧区域产生无限大的匀强负磁场。
+
+<Figure caption="图n 二维磁场中的“跨路”定理" w-120 float-right>
+<img src="./assets/3.svg" class="!mb--8" />
+</Figure>
 
 根据以上推论，可以断定，二维平面中两点的磁场强度差值，只与这两点任意连线上穿过的各电流有关，与电流的具体形状无关。这与三维空间中的安培环路定理极为相似。类比三维中磁场的安培环路定理：
 
@@ -272,9 +287,29 @@ $$
 B(\bm r_2)-B(\bm r_1)=c_2 \int_{\bm r_1}^{\bm r_2} \vec i \cdot d \vec{\bm n}
 $$
 
-（如图）
 
 实际上，上式左侧可以看作对磁场的“零维积分”。这恰与三维中的安培环路定理相对应。
+
+### 跨路定理的微分形式
+
+在三维中，运用 Stokes 定理可以将环路定理微分化：
+
+$$
+\iint_S (\nabla \times \vec B) \ \cdot d \vec S=\oint_{\partial S} \vec B \cdot d \vec l=\mu_0\iint_S \vec j \cdot d \vec S\\
+\implies \nabla \times \vec B=\mu_0 \vec j
+$$
+
+类似地，在二维中，也可以对跨路定理进行类似的操作。以下等式将跨路定理微分化，式中规定$d \vec{\bm n}$指向积分方向的左手边：
+
+$$
+\int_{\bm r_1}^{\bm r_2}\nabla B \cdot d \vec l=B(\bm r_2)-B(\bm r_1)=c_2\int_{\bm r_1}^{\bm r_2} \vec i \cdot d \vec{\bm n} \\
+\implies \nabla B=c_2\, M\,\vec i
+$$
+
+其中，$M=\begin{bmatrix}
+0 & -1 \\
+1 & 0 \\
+\end{bmatrix}$，是逆时针旋转 $90 \degree$ 的矩阵，$c_2$ 是一个待定的常数。
 
 ### 三维与二维电磁场的相似性
 
@@ -287,34 +322,9 @@ $$
 
 这种相似性也印证了上述推导的正确性，也说明了本文研究的二维空间在基本性质上与人类当前所处的三维空间相同，而不是任意的二维空间。
 
-### 跨路定理的微分形式
-
-在三维中，运用Stokes定理可以将环路定理微分化：
-
-$$
-\iint_S (\nabla \times \vec B) \ \cdot d \vec S=\oint_{\partial S} \vec B \cdot d \vec l=\mu_0\iint_S \vec j \cdot d \vec S\\
-\implies \nabla \times \vec B=\mu_0 \vec j
-$$
-
-类似地也可以对跨路定理进行操作：
-
-$$
-\int_{\bm r_1}^{\bm r_2}\nabla B \cdot d \vec l=B(\bm r_2)-B(\bm r_1)=c_2\int_{\bm r_1}^{\bm r_2} \vec i \cdot d \vec{\bm n}\\
-注意:这里需要额外规定d \vec{\bm n}指向积分方向的左手边\\
-\implies \nabla B=c_2\, M\,\vec i\\
-其中M=
-\begin{bmatrix}
-0 & -1 \\
-1 & 0 \\
-\end{bmatrix}
-是逆时针转90 \degree 的矩阵
-$$
-
-与$c_1$相同，这里的$c_2$也是一个待定的常数。
-
 ### 二维静磁场的模拟
 
-静磁场的模拟需要用到二维磁场的Biot-Savart定律：
+静磁场的模拟需要用到二维磁场的 Biot-Savart 定律如下：
 
 $$
 d \vec B=k\frac{I\cdot[(dl)_y(\hat {\bm r})_x-(dl)_x(\hat {\bm r})_y]}{r}
@@ -346,14 +356,15 @@ $$
 
 </div>
 
-5. 洛伦兹力
+### 二维的洛伦兹力
 
 带电粒子在电磁场中的受力公式：
+
 $$
 \vec F=q(\vec E+B\cdot M \vec v)
 $$
 
-6. 电磁感应
+### 二维的电磁感应
 
 在此做与三维类似的推导：
 
@@ -408,7 +419,7 @@ $$
 
 这便是二位世界的Maxwell方程组，它只有三个方程！！
 
-7. 电磁震荡
+### 二维的电磁震荡
 
 
 
@@ -484,7 +495,7 @@ $$
 
 ## 参考文献
 
-
+（本文内容均为原创，目前并没有找到系统地描述二维电磁场的文献）
 
 ## 致谢
 

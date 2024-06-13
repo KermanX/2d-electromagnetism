@@ -3,9 +3,9 @@ defineProps(['caption'])
 </script>
 
 <template>
-  <div relative text-center>
+  <div relative text-center mb-4>
     <slot />
-    <div mt--4 ml-8>
+    <div mt--4 ml-8 style="font-family: KaTeX_Main, 'Times New Roman', serif;">
       <slot name="caption">{{ caption }}</slot>
     </div>
   </div>
