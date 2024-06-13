@@ -287,16 +287,16 @@ $$
 
 这种相似性也印证了上述推导的正确性，也说明了本文研究的二维空间在基本性质上与人类当前所处的三维空间相同，而不是任意的二维空间。
 
-### 这是啥
+### 跨路定理的微分形式
 
-在三维中，接下来可以把磁场的一维积分转化为其旋度的二维积分从而得到磁场的旋度方程：
+在三维中，运用Stokes定理可以将环路定理微分化：
 
 $$
 \iint_S (\nabla \times \vec B) \ \cdot d \vec S=\oint_{\partial S} \vec B \cdot d \vec l=\mu_0\iint_S \vec j \cdot d \vec S\\
 \implies \nabla \times \vec B=\mu_0 \vec j
 $$
 
-类似地对跨路定理进行操作：
+类似地也可以对跨路定理进行操作：
 
 $$
 \int_{\bm r_1}^{\bm r_2}\nabla B \cdot d \vec l=B(\bm r_2)-B(\bm r_1)=c_2\int_{\bm r_1}^{\bm r_2} \vec i \cdot d \vec{\bm n}\\
@@ -312,15 +312,15 @@ $$
 
 与$c_1$相同，这里的$c_2$也是一个待定的常数。
 
-这里补充磁场的Biot-Savart定律：
+### 二维静磁场的模拟
+
+静磁场的模拟需要用到二维磁场的Biot-Savart定律：
 
 $$
 d \vec B=k\frac{I\cdot[(dl)_y(\hat {\bm r})_x-(dl)_x(\hat {\bm r})_y]}{r}
 $$
 
 可以证明此Biot-Savart定律与跨路定理微分形式是自洽的。
-
-### 二维静磁场的模拟
 
 <div grid grid-cols-2 gap-y-4>
 
