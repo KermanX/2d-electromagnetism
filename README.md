@@ -47,10 +47,10 @@
 三维静电场中的高斯定理，是指任意闭合曲面（或称高斯面）$S$ 的电通量等于该面内全部电荷的代数和除以介电常数，与外面的电荷无关<sup>\[2\]</sup>。该定理描述了电场的基本规律之一，应当具有普适性。在二维空间中，应当也存在与之对应的“二维静电场的高斯定理”。由于本文研究的二维空间在基本性质上与人类当前所处的三维空间相同，仅可以假设高斯定理在不可能与维数相关的部分仍然适用。即，通过闭合曲线的电通量仅与曲线内部电荷有关，而与曲线的具体形状和内部电荷分布情况无关：
 
 $$
-\oint_L \vec E\cdot d \bm{\vec n}=f(q)
+\oint_L \vec E\cdot d \vec n=f(q)
 $$
 
-其中，$\vec E$ 为电场强度，$d \bm{\vec n}$ 为曲线上的微元法向量，$q$ 为曲线内部的电荷量，$f$ 为待定函数。
+其中，$\vec E$ 为电场强度，$d \vec n$ 为曲线上的微元法向量，$q$ 为曲线内部的电荷量，$f$ 为待定函数。
 
 显然，在$q=0$的情况下，上式为0，即：
 
@@ -61,7 +61,7 @@ $$
 另一方面，对于包含多个电荷的情况，由于电场满足叠加原理，故：
 
 $$
-\oint_L \vec E\cdot d \bm{\vec n}=\sum_i f(q_i)
+\oint_L \vec E\cdot d \vec n=\sum_i f(q_i)
 $$
 
 因此，$f$ 必须满足线性关系：
@@ -73,27 +73,27 @@ $$
 故二维静电场的高斯定理即为：
 
 $$
-\oint_L \vec E\cdot d \bm{\vec n} = c_1 q
+\oint_L \vec E\cdot d \vec n = c_1 q
 $$
 
-其中，$L$ 为任意闭合曲线，$\vec E$ 为电场强度，$d \bm{\vec n}$ 为曲线上的微元法向量，$q$ 为曲线内部的电荷量，$c_1$ 为待定常数。$c_1$ 应由实验测量确定，不在本文的研究范围内。
+其中，$L$ 为任意闭合曲线，$\vec E$ 为电场强度，$d \vec n$ 为曲线上的微元法向量，$q$ 为曲线内部的电荷量，$c_1$ 为待定常数。$c_1$ 应由实验测量确定，不在本文的研究范围内。
 
 ### 二维静电场的环路定理
 
 三维静电场中的环路定理是指，电场的环路积分为0。这体现了电场的无旋性质。在二维空间中，应当也存在与之对应的“二维静电场的环路定理”。作为基本性质，本文假设环路定理在不可能与维数相关的部分仍然适用。即，电场的环路积分为0：
 
 $$
-\oint_L \vec E\cdot d \bm{\vec n}=0
+\oint_L \vec E\cdot d \vec n=0
 $$
 
-其中，$L$为任意闭合曲线，$\vec E$为电场强度，$d \bm{\vec n}$为曲线上的微元法向量。
+其中，$L$为任意闭合曲线，$\vec E$为电场强度，$d \vec n$为曲线上的微元法向量。
 
 ### 二维静电场的库伦定律
 
 在二维静电场的高斯定理中，由于$L$任意，可取一个圆形的高斯“环”$L$，其圆心处有一个点电荷$q$。由于本文研究的二维空间应当也具有各向同性，点电荷 $q$ 在环上产生的电场的径向分量应当相同。故：
 
 $$
-\oint_L \vec E\cdot d \bm{\vec n}=E_r\cdot 2\pi r =c_1 q
+\oint_L \vec E\cdot d \vec n=E_r\cdot 2\pi r =c_1 q
 $$
 
 其中，$r$为圆的半径，$E_r$为点电荷在$r$处产生电场的径向分量。因此可以推出：
@@ -107,7 +107,7 @@ $$
 类似地，在圆环上应用二维静电场的环路定理，并考虑二维空间的各向同性，即电场的切向分量只可能处处相等的顺时针或逆时针分量，可以得：
 
 $$
-\oint_L \vec E\cdot d \bm{\vec n}=E_\theta\cdot 2\pi r =0
+\oint_L \vec E\cdot d \vec n=E_\theta\cdot 2\pi r =0
 $$
 
 故
@@ -119,7 +119,7 @@ $$
 即二维空间中点电荷产生电场强度的切向分量为 $0$。故二维空间中的库伦定律为：
 
 $$
-\vec E = E_r \bm{\hat r} = \frac{k q}{r} \bm{\hat r}
+\vec E = E_r \hat r = \frac{k q}{r} \hat r
 $$
 
 ### 二维静电场的泊松方程
@@ -177,7 +177,7 @@ $$
 二维空间中的载流子（如二维电子）在空间中运动时，即会产生电流。二维空间中的电流密度与三维空间中的电流密度具有类似的定义。即，单位截线长度上的电流量与单位时间的比值。二维空间中的电流是矢量，故可以分解为两个分量：
 
 $$
-\vec i = i_x \bm{\hat x} + i_y \bm{\hat y}
+\vec i = i_x \hat x + i_y \hat y
 $$
 
 而在二维空间中不存在 $j_z$ 分量。二维空间中电荷守恒定律仍成立，故电流密度同样满足电流连续性方程：
@@ -222,12 +222,11 @@ $$
 \oint_{\partial S} \vec B \cdot d \vec l=\mu_0 \iint_S \vec j \cdot d \vec S
 $$
 
-可以得到二维磁场中的“跨路”定理：
+规定 $d \vec{n}$ 指向积分方向的左手边，可以得到二维磁场中的“跨路”定理：
 
 $$
-B(\bm r_2)-B(\bm r_1)=c_2 \int_{\bm r_1}^{\bm r_2} \vec i \cdot d \vec{\bm n}
+B(\vec r_2)-B(\vec r_1)=c_2 \int_{\vec r_1}^{\vec r_2} \vec i \cdot d \vec{n}
 $$
-
 
 实际上，上式左侧可以看作对磁场的“零维积分”。这恰与三维中的安培环路定理相对应。
 
@@ -240,10 +239,10 @@ $$
 \implies \nabla \times \vec B=\mu_0 \vec j
 $$
 
-类似地，在二维中，也可以对跨路定理进行类似的操作。以下等式将跨路定理微分化，式中规定$d \vec{\bm n}$指向积分方向的左手边：
+类似地，在二维中将跨路定理转化为微分形式：
 
 $$
-\int_{\bm r_1}^{\bm r_2}\nabla B \cdot d \vec l=B(\bm r_2)-B(\bm r_1)=c_2\int_{\bm r_1}^{\bm r_2} \vec i \cdot d \vec{\bm n} \\
+\int_{\vec r_1}^{\vec r_2}\nabla B \cdot d \vec l=B(\vec r_2)-B(\vec r_1)=c_2\int_{\vec r_1}^{\vec r_2} \vec i \cdot d \vec{n} \\
 \implies \nabla B=c_2\, M\,\vec i
 $$
 
@@ -268,7 +267,7 @@ $$
 二维磁场的 Biot-Savart 定律如下：
 
 $$
-d \vec B=k\frac{I\cdot[(dl)_y(\hat {\bm r})_x-(dl)_x(\hat {\bm r})_y]}{r}
+d \vec B=k\frac{I\cdot[(dl)_y(\hat {r})_x-(dl)_x(\hat {r})_y]}{r}
 $$
 
 通过观察模拟结果，可得 Biot-Savart 定律与跨路定理微分形式是自洽的。
@@ -291,8 +290,12 @@ $$
 <img src="./graphs/out/b-4.png">
 </Figure>
 
-<Figure caption="图12 三条无限长直线产生的磁场模拟">
+<Figure caption="图12 三条交叉无限长直线产生的磁场模拟">
 <img src="./graphs/out/b-5.png">
+</Figure>
+
+<Figure caption="图13 三条平行无限长直线产生的磁场模拟">
+<img src="./graphs/out/b-6.png">
 </Figure>
 
 </div>
@@ -334,20 +337,20 @@ $$
 变化的电磁场中，电流的连续性方程不再成立：
 
 $$
-\oint_{\partial D} \vec i \, \cdot d \vec {\bm n} \neq 0
+\oint_{\partial D} \vec i \, \cdot d \vec {n} \neq 0
 $$
 
 而是有：
 
 $$
-c_2 \oint_{\partial D} \vec i \, \cdot d \vec {\bm n}=-c_2 \frac{d}{dt} \iint_D \rho \ dS=-\lambda_2 \frac{d}{dt} \oint_{\partial D} \vec E \cdot d \vec {\bm n}=-\lambda_2 \oint_{\partial D} \frac{\partial \vec E}{\partial t} \cdot d \vec {\bm n}\\
-\implies \oint_{\partial D} (c_2\vec i+\lambda_2 \frac{\partial \vec E}{\partial t})\cdot d \vec {\bm n}=0
+c_2 \oint_{\partial D} \vec i \, \cdot d \vec {n}=-c_2 \frac{d}{dt} \iint_D \rho \ dS=-\lambda_2 \frac{d}{dt} \oint_{\partial D} \vec E \cdot d \vec {n}=-\lambda_2 \oint_{\partial D} \frac{\partial \vec E}{\partial t} \cdot d \vec {n}\\
+\implies \oint_{\partial D} (c_2\vec i+\lambda_2 \frac{\partial \vec E}{\partial t})\cdot d \vec {n}=0
 $$
 
 所以二维电磁场的跨路定理应当被改写为：
 
 $$
-B(\bm r_2)-B(\bm r_1)=\int_{\bm r_1}^{\bm r_2} (c_2\vec i+\lambda_2 \frac{\partial \vec E}{\partial t})\cdot d \vec{\bm n}
+B(\vec r_2)-B(\vec r_1)=\int_{\vec r_1}^{\vec r_2} (c_2\vec i+\lambda_2 \frac{\partial \vec E}{\partial t})\cdot d \vec{n}
 $$
 
 转化为微分形式：
