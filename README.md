@@ -10,7 +10,7 @@
 
 </div>
 
-<div mb-3 leading-6 letter-spacing-normal style="word-break: break-all;">
+<div mb-3 leading-6 letter-spacing-normal style="font-family: 'Times New Roman'">
 
 **ABSTRACT:** <span font-serif>The properties of three-dimensional electromagnetic fields have been well-studied, while current research on two-dimensional electromagnetic fields is scant. The study of two-dimensional electromagnetic fields is significant, which can deal with "two-dimensional foil" attacks, facilitate active immigration into two-dimensional spaces, and aid in creating two-dimensional virtual worlds. This paper investigates the electromagnetic fields of two-dimensional spaces which share fundamental properties with the three-dimensional space that humans currently inhabit. Employing electromagnetic theory that is unaffected by dimensions as the basic assumption, i.e., starting from the superposition principle, Gauss's law, and loop theorem, we derive the inverse square form of Coulomb's law and Poisson's Equation. In magnetism, this paper proves that two-dimensional magnetic field strength is scalar, and the two-dimensional magnetic field is a scalar field. Analogous to Ampere's loop theorem in three dimensions, we formulated the cross-route theorem for a two-dimensional magnetic field, then via mathematical derivation, we obtained the differential form of the cross-route theorem, leading to the Maxwell's equations for the two-dimensional electromagnetic field and the fluctuation equation for electromagnetic oscillations. In conclusion, this paper presents self-consistent omulations of two-dimensional electromagnetism. They possess sound mathematical structures and can correspond to the formula of three-dimensional electromagnetism presently understood by humans, which reaffirms the legitimacy of the basic assumptions made in this paper.</span>
 
@@ -40,7 +40,7 @@
 
 ### 二维电磁场的叠加原理
 
-三维电磁场中的叠加原理是指，多个电荷产生的电场在空间中产生的电场、电势可以直接相加。这体现了电场的线性性质。由于本文讨论的二维空间除空间维数与人类目前所处的三维空间不同以外，在不产生矛盾的情况下，应假设其他性质与三维空间相同。因此，二维空间中的电磁场也应满足叠加原理。
+三维电磁场中的叠加原理是指，多个电荷产生的电场在空间中产生的电场、电势可以直接相加。这体现了电场的线性性质。由于本文讨论的二维空间除空间维数与人类当前所处的三维空间不同以外，在不产生矛盾的情况下，应假设其他性质与三维空间相同。因此，二维空间中的电磁场也应满足叠加原理。
 
 ### 二维静电场的高斯定理
 
@@ -154,19 +154,23 @@ $$
 <img src="./graphs/out/e-1.png">
 </Figure>
 
-<Figure caption="图2 二维有限长均匀带电线电场模拟">
-<img src="./graphs/out/e-3.png">
+<Figure caption="图2 二维同号点电荷电场模拟">
+<img src="./graphs/out/e-6.png">
 </Figure>
 
 <Figure caption="图3 二维带电导体圆环电场模拟">
 <img src="./graphs/out/e-4.png">
 </Figure>
 
-<Figure caption="图4 二维电容器电场模拟">
+<Figure caption="图4 二维有限长均匀带电线电场模拟">
+<img src="./graphs/out/e-3.png">
+</Figure>
+
+<Figure caption="图5 二维电容器电场模拟">
 <img src="./graphs/out/e-5.png">
 </Figure>
 
-<Figure caption="图5 二维无限长带电线与点电荷电场模拟">
+<Figure caption="图6 二维无限长带电线与点电荷电场模拟">
 <img src="./graphs/out/e-2.png">
 </Figure>
 
@@ -200,11 +204,11 @@ $$
 
 ### 二维电流的磁效应
 
-在三维空间中，电流产生磁场的现象可由 Biot-Savart 定律和安培环路定理描述。其中，安培环路定理由 Biot-Savart 定律推导而来，而 Biot-Savart 定律由实验得出。由于不可能直接进入二维空间进行实验，一个合理的方式是将本文所研究的二维空间转化为受特殊约束的三维空间，并在三维空间中进行推导，再将结论转化为二维空间中的结论。
+在三维空间中，电流产生磁场的现象可由毕奥-萨伐尔定律和安培环路定理描述。其中，安培环路定理由毕奥-萨伐尔定律推导而来，而毕奥-萨伐尔定律由实验得出。由于不可能直接进入二维空间进行实验，一个合理的方式是将本文所研究的二维空间转化为受特殊约束的三维空间，并在三维空间中进行推导，再将结论转化为二维空间中的结论。
 
 将任意的二维空间的电流分布在第三个维度上无限地复制，可以得到一个具有延 $z$ 轴平移对称性的三维空间。比如，二维空间的逆时针电流环在 $z$ 轴方向上无限延伸，将形成一个在三维空间中无限长且无线密的螺线管。根据三维空间的电磁场理论，可得在螺线管内存在只有 $z$ 方向分量的匀强磁场。这样的磁场分布同样具有延 $z$ 轴的平移对称性，故可以简单地截取三维空间中的一个 $xOy$ 平面，可以认为该平面上的磁场分布即反映了我们研究的二维空间中该电流环产生的磁场。
 
-<Figure caption="图6 二维空间的电流分布在第三个维度上无限复制的示意图">
+<Figure caption="图7 二维空间的电流分布在第三个维度上无限复制的示意图">
 <img src="./assets/2.svg" />
 </Figure>
 
@@ -212,7 +216,7 @@ $$
 
 类似地，我们可以将二维空间中的无限长电流转化为三维空间中的无穷大载流平面，再截取一个平面，得到二维空间中的磁场分布。由此可得，无限长电流在它电流方向左侧区域产生无限大的匀强正磁场，右侧区域产生无限大的匀强负磁场。
 
-<Figure caption="图7 二维磁场中的“跨路”定理" w-120 float-right>
+<Figure caption="图8 二维磁场中的“跨路”定理" w-120 float-right>
 <img src="./assets/3.svg" class="!mb--8" />
 </Figure>
 
@@ -264,37 +268,37 @@ $$
 
 ### 二维静磁场的模拟
 
-二维磁场的 Biot-Savart 定律如下：
+二维磁场的毕奥-萨伐尔定律如下：
 
 $$
 d \vec B=k\frac{I\cdot[(dl)_y(\hat {r})_x-(dl)_x(\hat {r})_y]}{r}
 $$
 
-通过观察模拟结果，可得 Biot-Savart 定律与跨路定理微分形式是自洽的。
+通过观察模拟结果，可得毕奥-萨伐尔定律与跨路定理微分形式是自洽的。
 
 <div grid grid-cols-2 gap-y-4>
 
-<Figure caption="图8 圆形电流环产生的磁场模拟">
+<Figure caption="图9 圆形电流环产生的磁场模拟">
 <img src="./graphs/out/b-1.png">
 </Figure>
 
-<Figure caption="图9 无限长直线电流产生的磁场模拟">
+<Figure caption="图10 无限长直线电流产生的磁场模拟">
 <img src="./graphs/out/b-2.png">
 </Figure>
 
-<Figure caption="图10 方形电流环产生的磁场模拟">
+<Figure caption="图11 方形电流环产生的磁场模拟">
 <img src="./graphs/out/b-3.png">
 </Figure>
 
-<Figure caption="图11 两个反向电流环产生的磁场模拟">
+<Figure caption="图12 两个反向电流环产生的磁场模拟">
 <img src="./graphs/out/b-4.png">
 </Figure>
 
-<Figure caption="图12 三条交叉无限长直线产生的磁场模拟">
+<Figure caption="图13 三条交叉无限长直线产生的磁场模拟">
 <img src="./graphs/out/b-5.png">
 </Figure>
 
-<Figure caption="图13 三条平行无限长直线产生的磁场模拟">
+<Figure caption="图14 三条平行无限长直线产生的磁场模拟">
 <img src="./graphs/out/b-6.png">
 </Figure>
 
@@ -315,10 +319,10 @@ $$
 一方面：
 
 $$
-\mathscr {E}=\lambda_1 \frac{d \Phi}{dt}=\lambda_1 \frac{d}{dt} \iint_D B dS=\lambda_1 \iint_D \frac{\partial B}{\partial t}dS
+\mathscr {E}=c_3 \frac{d \Phi}{dt}=c_3 \frac{d}{dt} \iint_D B dS=c_3 \iint_D \frac{\partial B}{\partial t}dS
 $$
 
-上式中，常数 $\lambda_1<0$，这对应于楞次定律。
+上式中，常数 $c_3<0$，这对应于楞次定律。
 
 另一方面：
 
@@ -329,7 +333,7 @@ $$
 于是得到：
 
 $$
-\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y}=\lambda_1 \frac{\partial B}{\partial t}
+\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y}=c_3 \frac{\partial B}{\partial t}
 $$
 
 然后对磁场的梯度方程进行变换。
@@ -343,20 +347,20 @@ $$
 而是有：
 
 $$
-c_2 \oint_{\partial D} \vec i \, \cdot d \vec {n}=-c_2 \frac{d}{dt} \iint_D \rho \ dS=-\lambda_2 \frac{d}{dt} \oint_{\partial D} \vec E \cdot d \vec {n}=-\lambda_2 \oint_{\partial D} \frac{\partial \vec E}{\partial t} \cdot d \vec {n}\\
-\implies \oint_{\partial D} (c_2\vec i+\lambda_2 \frac{\partial \vec E}{\partial t})\cdot d \vec {n}=0
+c_2 \oint_{\partial D} \vec i \, \cdot d \vec {n}=-c_2 \frac{d}{dt} \iint_D \rho \ dS=-\frac{c_2}{c_1} \frac{d}{dt} \oint_{\partial D} \vec E \cdot d \vec {n}=-\frac{c_2}{c_1} \oint_{\partial D} \frac{\partial \vec E}{\partial t} \cdot d \vec {n}\\
+\implies \oint_{\partial D} (c_2\vec i+\frac{c_2}{c_1} \frac{\partial \vec E}{\partial t})\cdot d \vec {n}=0
 $$
 
 所以二维电磁场的跨路定理应当被改写为：
 
 $$
-B(\vec r_2)-B(\vec r_1)=\int_{\vec r_1}^{\vec r_2} (c_2\vec i+\lambda_2 \frac{\partial \vec E}{\partial t})\cdot d \vec{n}
+B(\vec r_2)-B(\vec r_1)=\int_{\vec r_1}^{\vec r_2} (c_2\vec i+\frac{c_2}{c_1} \frac{\partial \vec E}{\partial t})\cdot d \vec{n}
 $$
 
 转化为微分形式：
 
 $$
-\nabla B=M(c_2\,\vec i+\lambda_2 \frac{\partial \vec E}{\partial t})
+\nabla B=M(c_2\,\vec i+\frac{c_2}{c_1} \frac{\partial \vec E}{\partial t})
 $$
 
 综上，电磁感应现象的方程可以表述为如下形式：
@@ -364,8 +368,8 @@ $$
 $$
 \begin{aligned}
 \nabla \cdot \vec E&=c_1 \cdot \rho \\
-\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y}&=\lambda_1\frac{\partial B}{\partial t} \\
-\nabla B&=M(c_2\,\vec i+\lambda_2 \frac{\partial \vec E}{\partial t})
+\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y}&=c_3\frac{\partial B}{\partial t} \\
+\nabla B&=M(c_2\,\vec i+\frac{c_2}{c_1} \frac{\partial \vec E}{\partial t})
 \end{aligned}
 $$
 
@@ -382,8 +386,8 @@ $$
 $$
 \begin{align}
 \nabla \cdot \vec E &= 0\\
-\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y} &= \lambda_1\frac{\partial B}{\partial t}\\
-\nabla B&=M\lambda_2 \frac{\partial \vec E}{\partial t}
+\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y} &= c_3\frac{\partial B}{\partial t}\\
+\nabla B&=M\frac{c_2}{c_1} \frac{\partial \vec E}{\partial t}
 \end{align}
 $$
 
@@ -394,16 +398,16 @@ $$
 $$
 \begin{aligned}
 \frac{\partial}{\partial x}(\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y})\hat x+\frac{\partial}{\partial y}(\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y})\hat y
-&=\lambda_1\frac{\partial (\nabla B)}{\partial t}\\
-&=\lambda_1\frac{\partial}{\partial t}(M\lambda_2 \frac{\partial \vec E}{\partial t}) \\
-&=\lambda_1\lambda_2\frac{\partial^2}{\partial t^2}(-E_y\hat x+E_x\hat y)
+&=c_3\frac{\partial (\nabla B)}{\partial t}\\
+&=c_3\frac{\partial}{\partial t}(M\frac{c_2}{c_1} \frac{\partial \vec E}{\partial t}) \\
+&=\frac{c_2 c_3}{c_1}\frac{\partial^2}{\partial t^2}(-E_y\hat x+E_x\hat y)
 \end{aligned}
 $$
 
 左右两侧的x分量相等，可以得到：
 
 $$
-\frac{\partial}{\partial x}(\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y})=\frac{\partial^2 E_y}{\partial x^2}-\frac{\partial^2 E_x}{\partial x \partial y}=-\lambda_1\lambda_2\frac{\partial^2 E_y}{\partial t^2}
+\frac{\partial}{\partial x}(\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y})=\frac{\partial^2 E_y}{\partial x^2}-\frac{\partial^2 E_x}{\partial x \partial y}=-\frac{c_2 c_3}{c_1}\frac{\partial^2 E_y}{\partial t^2}
 $$
 
 根据(1)式，有：
@@ -415,19 +419,19 @@ $$
 于是得到了 $E_y$ 的波动方程：
 
 $$
-\nabla^2 E_y+\lambda_1\lambda_2\frac{\partial^2 E_y}{\partial t^2}=0
+\nabla^2 E_y+\frac{c_2 c_3}{c_1}\frac{\partial^2 E_y}{\partial t^2}=0
 $$
 
 同理，考虑y分量相等，可以得到了 $E_x$ 的波动方程：
 
 $$
-\nabla^2 E_x+\lambda_1\lambda_2\frac{\partial^2 E_x}{\partial t^2}=0
+\nabla^2 E_x+\frac{c_2 c_3}{c_1}\frac{\partial^2 E_x}{\partial t^2}=0
 $$
 
 综合起来有：
 
 $$
-\nabla^2 \vec E+\lambda_1\lambda_2\frac{\partial^2\vec E}{\partial t^2}=\vec 0
+\nabla^2 \vec E+\frac{c_2 c_3}{c_1}\frac{\partial^2\vec E}{\partial t^2}=\vec 0
 $$
 
 
@@ -437,27 +441,86 @@ $$
 
 $$
 \begin{aligned}
-\nabla^2 B &= \lambda_2[\frac{\partial}{\partial x}(M\frac{\partial \vec E}{\partial t})_x+\frac{\partial}{\partial y}(M\frac{\partial \vec E}{\partial t})_y] \\
-&= \lambda_2 \frac{\partial}{\partial t}(-\frac{\partial E_y}{\partial x}+\frac{\partial E_x}{\partial y}) \\
-&= -\lambda_1\lambda_2 \frac{\partial^2 B}{\partial t^2}
+\nabla^2 B &= \frac{c_2}{c_1}[\frac{\partial}{\partial x}(M\frac{\partial \vec E}{\partial t})_x+\frac{\partial}{\partial y}(M\frac{\partial \vec E}{\partial t})_y] \\
+&= \frac{c_2}{c_1} \frac{\partial}{\partial t}(-\frac{\partial E_y}{\partial x}+\frac{\partial E_x}{\partial y}) \\
+&= -\frac{c_2 c_3}{c_1} \frac{\partial^2 B}{\partial t^2}
 \end{aligned}
 $$
 
 即:
 
 $$
-\nabla^2 B+\lambda_1\lambda_2\frac{\partial^2 B}{\partial t^2}=0
+\nabla^2 B+\frac{c_2 c_3}{c_1}\frac{\partial^2 B}{\partial t^2}=0
 $$
 
 故二维电磁波的传播速度为：
 
 $$
-u=\frac{1}{\sqrt{-\lambda_1\lambda_2}}
+u=\sqrt{-\frac{c_1}{c_2 c_3}}
 $$
 
 ## 结论
 
-二维电磁场与三维
+对于基本性质与人类当前所处的三维空间相同的二维空间，本文建立了自洽的二维电磁学理论。本文从静电场的叠加原理、高斯定理的非数值部分、环路定理出发，推导了二维静电场的库仑定律：
+
+$$
+\oint_L \vec E\cdot d \vec n = c_1 q
+$$
+
+和泊松方程：
+
+$$
+\nabla^2 \phi = -c_1 \rho
+$$
+
+基于此，本文给出了二维静电场的模拟结果。
+
+在磁学方面，本文从三个方面论证了二维中的磁场是标量场。并研究了二维电流的磁效应，给出了将二维空间的电流分布在第三个维度上无限地复制，得到一个具有延 $z$ 轴平移对称性的三维空间，再将三维空间中得到的磁场分布转化为二维空间中的磁场分布的方法。类似于三维中的安培环路定理，本文给出了二维空间中的“跨路”定理：
+
+$$
+B(\vec r_2)-B(\vec r_1)=c_2 \int_{\vec r_1}^{\vec r_2} \vec i \cdot d \vec{n}
+$$
+
+并给出了二维空间中的磁场的微分形式：
+
+$$
+\nabla B=\begin{bmatrix}
+0 & -1 \\
+1 & 0 \\
+\end{bmatrix}(c_2\,\vec i+\frac{c_2}{c_1} \frac{\partial \vec E}{\partial t})
+$$
+
+和毕奥-萨伐尔定律：
+
+$$
+d \vec B=k\frac{I\cdot[(dl)_y(\hat {r})_x-(dl)_x(\hat {r})_y]}{r}
+$$
+
+基于此，本文给出了二维静磁场的模拟结果，验证了理论的正确性。
+
+在电磁感应方面，本文给出了二维空间中的麦克斯韦方程组：
+
+$$
+\begin{aligned}
+\nabla \cdot \vec E&=c_1 \cdot \rho \\
+\frac{\partial E_y}{\partial x}-\frac{\partial E_x}{\partial y}&=c_3\frac{\partial B}{\partial t} \\
+\nabla B&=M(c_2\,\vec i+\frac{c_2}{c_1} \frac{\partial \vec E}{\partial t})
+\end{aligned}
+$$
+
+并推导了二维空间中的电磁波的波动方程：
+
+$$
+\nabla^2 \vec E+\frac{c_2 c_3}{c_1}\frac{\partial^2\vec E}{\partial t^2}=\vec 0
+$$
+
+和二维电磁波的传播速度：
+
+$$
+u=\sqrt{-\frac{c_1}{c_2 c_3}}
+$$
+
+以上结论均可以与人类当前所处的三维空间的电磁学定理对应，体现了本文所研究的二维空间在基本性质上与三维空间相同。
 
 ## 讨论
 
